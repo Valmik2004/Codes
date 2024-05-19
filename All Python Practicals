@@ -1,0 +1,98 @@
+Lab1: Program to calculate area of circle, rectangle,
+triangle
+1. Area of Circle
+2. Area of Rectangle
+The area of rectangle is: 216
+3. Area of Triangle
+The area of triangle is: 230.0
+4. Area of triangle using Heron's Formula
+The area of triangle using heron's formula is: 64.06246951218786
+In [ ]:
+radius = int(input("Enter the radius:"))
+circle_area = 3.14 * radius
+print("The area of circle is: ", circle_area)
+In [3]:
+length = int(input("Enter Length:"))
+breadth = int(input("Enter breadth:"))
+rect_area = length * breadth
+print("The area of rectangle is: ", rect_area)
+In [4]:
+base = int(input("Enter base of triangle:"))
+height = int(input("Enter height of triangle: "))
+tri_area = 0.5 * base * height
+print("The area of triangle is: ", tri_area)
+In [6]:
+import math
+def heron_triangle_area(a, b, c):
+ s = (a+b+c) / 2
+ area = math.sqrt(s*(s-a)*(s-b)*(s-c))
+ return area
+a = int(input("Enter first side of triangle:"))
+b = int(input("Enter second side of triangle:"))
+c = int(input("Enter third side of triangle:"))
+print("The area of triangle using heron's formula is:", heron_triangle_area(a, b, c))
+
+Lab2: Program to find union of two lists
+Methods to concatanate two lists
+List 1: [1, 3, 5, 7, 9]
+List 2: [0, 2, 4, 6, 8]
+Method 1: Using '+' operator
+List 1: [1, 3, 5, 7, 9]
+List 2: [0, 2, 4, 6, 8]
+Concatenated list: [1, 3, 5, 7, 9, 0, 2, 4, 6, 8]
+Method 2: Using '*' operator
+List 1: [1, 3, 5, 7, 9]
+List 2: [0, 2, 4, 6, 8]
+Concatenated list: [1, 3, 5, 7, 9, 0, 2, 4, 6, 8]
+Method 3: Using set() method
+List 1: [1, 3, 5, 7, 9]
+List 2: [0, 2, 4, 6, 8]
+Concatenated list: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Method 4: Using itertools.chain() In [34]:
+list1 = []
+size1 = int(input("Enter the size of first list:"))
+for i in range(size1):
+ num1 = int(input("Enter number:"))
+ list1.append(num1)
+print("List 1:", list1)
+In [37]:
+list2 = []
+size2 = int(input("Enter the size of second list:"))
+for i in range(size2):
+ num2 = int(input("Enter number:"))
+ list2.append(num2)
+print("List 2:", list2)
+In [38]:
+union_list = list1 + list2
+print("List 1:", list1)
+print("List 2:", list2)
+print("Concatenated list: ", union_list)
+In [39]:
+union_list = [*list1, *list2]
+print("List 1:", list1)
+print("List 2:", list2)
+print("Concatenated list: ", union_list)
+In [40]:
+union_list = list(set(list1+list2))
+print("List 1:", list1)
+print("List 2:", list2)
+print("Concatenated list: ", union_list)
+In [41]: import itertools
+union_list = list(itertools.chain(list1, list2))
+List 1: [1, 3, 5, 7, 9]
+List 2: [0, 2, 4, 6, 8]
+Concatenated list: [1, 3, 5, 7, 9, 0, 2, 4, 6, 8]
+Method 5: Using extend() Method
+Concatenated list: [1, 3, 5, 7, 9, 0, 2, 4, 6, 8]
+Method6: Using append()
+Concatenated list: [1, 3, 5, 7, 9, 0, 2, 4, 6, 8, 0, 2, 4, 6, 8]
+print("List 1:", list1)
+print("List 2:", list2)
+print("Concatenated list: ", union_list)
+In [42]:
+list1.extend(list2)
+print("Concatenated list: ", list1)
+In [43]:
+for i in list2:
+ list1.append(i)
+print("Concatenated list: ", list1)
