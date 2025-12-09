@@ -20,6 +20,7 @@ rect_area = length * breadth
 print("The area of rectangle is: ", rect_area)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
 In [4]:
 base = int(input("Enter base of triangle:"))
 height = int(input("Enter height of triangle: "))
