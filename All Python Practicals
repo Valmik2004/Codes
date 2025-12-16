@@ -13,14 +13,12 @@ circle_area = 3.14 * radius
 print("The area of circle is: ", circle_area)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
 In [3]:
 length = int(input("Enter Length:"))
 breadth = int(input("Enter breadth:"))
 rect_area = length * breadth
 print("The area of rectangle is: ", rect_area)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-
 
 In [4]:
 base = int(input("Enter base of triangle:"))
