@@ -13,6 +13,7 @@ circle_area = 3.14 * radius
 print("The area of circle is: ", circle_area)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
 In [3]:
 length = int(input("Enter Length:"))
 breadth = int(input("Enter breadth:"))
@@ -20,12 +21,14 @@ rect_area = length * breadth
 print("The area of rectangle is: ", rect_area)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
 In [4]:
 base = int(input("Enter base of triangle:"))
 height = int(input("Enter height of triangle: "))
 tri_area = 0.5 * base * height
 print("The area of triangle is: ", tri_area)
 --------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 In [6]:
 import math
@@ -35,11 +38,13 @@ def heron_triangle_area(a, b, c):
  return area
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
 a = int(input("Enter first side of triangle:"))
 b = int(input("Enter second side of triangle:"))
 c = int(input("Enter third side of triangle:"))
 print("The area of triangle using heron's formula is:", heron_triangle_area(a, b, c))
 ------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 Lab2: Program to find union of two lists
 Methods to concatanate two lists
