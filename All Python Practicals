@@ -35,7 +35,6 @@ def heron_triangle_area(a, b, c):
  return area
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
 a = int(input("Enter first side of triangle:"))
 b = int(input("Enter second side of triangle:"))
 c = int(input("Enter third side of triangle:"))
