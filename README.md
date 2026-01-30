@@ -1,1 +1,1 @@
-The files COntains the important codes.
+The files Contains the all the important codes.
